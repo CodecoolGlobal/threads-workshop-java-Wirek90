@@ -2,19 +2,19 @@
 
 This is a simple workshop on Java threads. We will be implementing a coffee shop. Here is how it works:
 
-- Take orders from customers using `game.takeOrder()` (this takes 1 s). There are 3 cash registers, so you can take up to 3 orders simultaneously.
+- Take orders from customers using `com.codecool.coffee.game.takeOrder()` (this takes 1 s). There are 3 cash registers, so you can take up to 3 orders simultaneously.
 - Each order is for one coffee and one sandwich.
-    - Make coffee using `game.makeCoffee(order)` (this takes 1.5 s). There is only one coffee machine so you can make only 1 coffee at a time.
-    - Make sandwiches using `game.makeSandwich(order)` (this takes 2 s). You can make up to 5 sandwiches simultaneously.
+    - Make coffee using `com.codecool.coffee.game.makeCoffee(order)` (this takes 1.5 s). There is only one coffee machine so you can make only 1 coffee at a time.
+    - Make sandwiches using `com.codecool.coffee.game.makeSandwich(order)` (this takes 2 s). You can make up to 5 sandwiches simultaneously.
 - We will be monitoring how many of these you are able to make per second.
 
-The classes in the `game/` directory are your interface to the coffee shop game, you should not modify them.
+The classes in the `com.codecool.coffee.game/` directory are your interface to the coffee shop com.codecool.coffee.game, you should not modify them.
 
 See also Links at the bottom of this page.
 
 ## Serve orders
 
-Open the `CoffeeShopTemplate` class. Run the main method (Ctrl-Shift-F10).
+Open the `com.codecool.coffee.CoffeeShopTemplate` class. Run the main method (Ctrl-Shift-F10).
 
 You can see that we're trying to serve coffee orders and managing about 1 per second. Can you make it faster using threads?
 
@@ -22,7 +22,7 @@ Remember that you can take only 3 orders at a time.
 
 ## Control access to coffee machine
 
-Now, try to actually make coffee (run `game.makeCoffee(order)`). Unfortunately, this will not work with multiple threads: there is only one coffee machine, so only 1 coffee can be made at at time :(
+Now, try to actually make coffee (run `com.codecool.coffee.game.makeCoffee(order)`). Unfortunately, this will not work with multiple threads: there is only one coffee machine, so only 1 coffee can be made at at time :(
 
 Try to control access so that only one thread makes coffee at a time.
 
@@ -41,7 +41,7 @@ Exit after processing 20 orders. You will need to make sure all threads are fini
 
 ## Make a sandwich
 
-Implement making sandwich (`game.makeSandwich(order)`). Remember that you can make several sandwiches at a time, so you'll probably need multiple threads.
+Implement making sandwich (`com.codecool.coffee.game.makeSandwich(order)`). Remember that you can make several sandwiches at a time, so you'll probably need multiple threads.
 
 ## Implement a queue yourself
 

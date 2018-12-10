@@ -1,4 +1,4 @@
-package game;
+package com.codecool.coffee.game;
 
 class Action {
     private final String name;

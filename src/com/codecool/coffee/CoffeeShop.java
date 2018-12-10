@@ -1,9 +1,11 @@
-import game.CoffeeGame;
-import game.Order;
+package com.codecool.coffee;
 
-public class CoffeeShopTemplate {
+import com.codecool.coffee.game.CoffeeGame;
+import com.codecool.coffee.game.Order;
+
+public class CoffeeShop {
     public static void main(String[] args) {
-        CoffeeShopTemplate shop = new CoffeeShopTemplate();
+        CoffeeShop shop = new CoffeeShop();
         shop.run();
     }
 
@@ -14,10 +16,10 @@ public class CoffeeShopTemplate {
             Order order = game.takeOrder();
 
             // Don't make coffee yet
-            // game.makeCoffee(order);
+            // com.codecool.coffee.game.makeCoffee(order);
 
             // Don't make sandwich yet
-            // game.makeSandwich(order);
+            // com.codecool.coffee.game.makeSandwich(order);
         }
     }
 }

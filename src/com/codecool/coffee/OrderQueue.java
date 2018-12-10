@@ -1,18 +1,20 @@
-import game.Order;
+package com.codecool.coffee;
+
+import com.codecool.coffee.game.Order;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class OrderQueueTemplate {
+public class OrderQueue {
     private Queue<Order> queue = new LinkedList<>();
     // 0 if the queue can grow without limit
     private int capacity;
 
-    public OrderQueueTemplate() {
+    public OrderQueue() {
         this(0);
     }
 
-    public OrderQueueTemplate(int capacity) {
+    public OrderQueue(int capacity) {
         this.capacity = capacity;
     }
 

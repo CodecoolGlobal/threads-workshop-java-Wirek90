@@ -1,4 +1,4 @@
-package game;
+package com.codecool.coffee.game;
 
 public class Order {
     static int counter = 0;

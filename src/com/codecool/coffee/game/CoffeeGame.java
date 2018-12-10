@@ -1,4 +1,4 @@
-package game;
+package com.codecool.coffee.game;
 
 public class CoffeeGame extends Game {
     Counter ordersTaken = new Counter("orders taken");

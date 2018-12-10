@@ -1,4 +1,4 @@
-package game;
+package com.codecool.coffee.game;
 
 public class Colors {
     // See https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
