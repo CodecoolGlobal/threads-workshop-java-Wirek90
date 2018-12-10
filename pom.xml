@@ -1,16 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.codecool.coffee</groupId>
+  
+  <groupId>com.codecool</groupId>
   <artifactId>coffee</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>coffee</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-  </dependencies>
+  <version>1.0</version>
+
   <properties>
-    <maven.compiler.target>1.9</maven.compiler.target>
-    <maven.compiler.source>1.9</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
 </project>
