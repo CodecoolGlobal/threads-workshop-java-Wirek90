@@ -48,10 +48,12 @@ Finally, try to implement your own queue. See `OrderQueue` for the class skeleto
 
 ## Links
 
-[Oracle's tutorial on concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
+- [Oracle's tutorial on concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
 
-[wait and notify methods in Java](https://www.baeldung.com/java-wait-notify)
+- [wait and notify methods in Java](https://www.baeldung.com/java-wait-notify)
 
-[Threading in C#](https://softwareengineering.stackexchange.com/questions/135709/what-are-the-best-resources-for-learning-about-concurrency-and-multi-threaded-ap/144609#144609) - C# but should still be relevant
+- [Threading in C#](https://softwareengineering.stackexchange.com/questions/135709/what-are-the-best-resources-for-learning-about-concurrency-and-multi-threaded-ap/144609#144609) - C# but should still be relevant
 
-[The Little Book of Semaphores](http://greenteapress.com/wp/semaphores/) - if want a solid theoretical introduction to concurrency problems
+- [Python Cookbook: Concurrency](https://www.oreilly.com/learning/python-cookbook-concurrency)
+
+- [The Little Book of Semaphores](http://greenteapress.com/wp/semaphores/) - if want a solid theoretical introduction to concurrency problems
