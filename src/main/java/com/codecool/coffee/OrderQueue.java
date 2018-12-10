@@ -3,6 +3,7 @@ package com.codecool.coffee;
 import com.codecool.coffee.game.Order;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class OrderQueue {
@@ -23,17 +24,25 @@ public class OrderQueue {
      * @param order
      * @throws InterruptedException if the thread has been interrupted while waiting
      */
-    public void put(Order order) throws InterruptedException {
-        // TODO
+    public synchronized void put(Order order) throws InterruptedException {
+        if (capacity > 0) {
+            while (queue.size() == capacity)
+                wait();
+        }
+        queue.add(order);
+        notifyAll();
     }
 
     /**
      * Removes an order from the queue. Waits if the queue is empty.
-     * @return order removed from the queue
+     * @return
      * @throws InterruptedException if the thread has been interrupted while waiting
      */
-    public Order take() throws InterruptedException {
-        // TODO
-        return null;
+    public synchronized Order take() throws InterruptedException {
+        while (queue.isEmpty())
+            wait();
+        Order order = queue.remove();
+        notifyAll();
+        return order;
     }
 }
