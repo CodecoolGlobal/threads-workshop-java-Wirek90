@@ -8,11 +8,13 @@ This is a simple workshop on Java threads. We will be implementing a coffee shop
     - Make sandwiches using `game.makeSandwich(order)` (this takes 2 s). You can make up to 5 sandwiches simultaneously.
 - We will be monitoring how many of these you are able to make per second.
 
+See also Links at the bottom of this page.
+
 ## Serve orders
 
-Open the `CoffeeShopTemplate` class. Run the main method (Ctrl-Shift-F10). 
+Open the `CoffeeShopTemplate` class. Run the main method (Ctrl-Shift-F10).
 
-You can see that we're trying to serve coffee orders and managing about 1 per second. Can you make it faster using threads? 
+You can see that we're trying to serve coffee orders and managing about 1 per second. Can you make it faster using threads?
 
 Remember that you can take oly 3 orders at a time.
 
@@ -41,3 +43,13 @@ Finally, try to implement your own queue. See `OrderQueue` for the class skeleto
 
 - First, assume that the queue is **unlimited** (`capacity == 0`). This is an easier case, because `put()` will always succeed immediately.
 - After your implementation is working, implement capacity limits. This means `put()` will have to block your thread if the queue is full.
+
+## Links
+
+[Oracle's tutorial on concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
+
+[wait and notify methods in Java](https://www.baeldung.com/java-wait-notify)
+
+[Threading in C#](https://softwareengineering.stackexchange.com/questions/135709/what-are-the-best-resources-for-learning-about-concurrency-and-multi-threaded-ap/144609#144609) - C# but should still be relevant
+
+[The Little Book of Semaphores](http://greenteapress.com/wp/semaphores/) - if want a solid theoretical introduction to concurrency problems
