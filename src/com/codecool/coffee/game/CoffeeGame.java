@@ -29,7 +29,7 @@ public class CoffeeGame extends Game {
         Order order = new Order();
         takeOrderAction.run(this, "#" + order.num);
         ordersTaken.increase();
-        return new Order();
+        return order;
     }
 
     public void makeCoffee(Order order) {
