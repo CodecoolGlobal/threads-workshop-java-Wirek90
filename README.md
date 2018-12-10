@@ -8,6 +8,8 @@ This is a simple workshop on Java threads. We will be implementing a coffee shop
     - Make sandwiches using `game.makeSandwich(order)` (this takes 2 s). You can make up to 5 sandwiches simultaneously.
 - We will be monitoring how many of these you are able to make per second.
 
+The classes in the `game/` directory are your interface to the coffee shop game, you should not modify them.
+
 See also Links at the bottom of this page.
 
 ## Serve orders
