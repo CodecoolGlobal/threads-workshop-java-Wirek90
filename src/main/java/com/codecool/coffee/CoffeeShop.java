@@ -16,10 +16,10 @@ public class CoffeeShop {
             Order order = game.takeOrder();
 
             // Don't make coffee yet
-            // com.codecool.coffee.game.makeCoffee(order);
+            // game.makeCoffee(order);
 
             // Don't make sandwich yet
-            // com.codecool.coffee.game.makeSandwich(order);
+            // game.makeSandwich(order);
         }
     }
 }
