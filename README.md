@@ -37,7 +37,14 @@ What happens if the queue has limited capacity?
 
 ## Clean up
 
-Exit after processing 20 orders. You will need to make sure all threads are finished before exiting the program (`Thread.join()`).
+Exit the program (using `System.exit()`) after processing 15 orders.
+
+To make the numbers simple, you can make:
+- 3 threads that will process 5 orders each (`for (int i = 0; i < 5; i++) ...`),
+- 1 thread that will make 15 coffees,
+- 3 threads that will make 5 sandwiches each.
+
+You will need to make sure all threads are finished before exiting the program (`Thread.join()`).
 
 ## Make a sandwich
 
