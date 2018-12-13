@@ -30,7 +30,7 @@ Try to control access so that only one thread makes coffee at a time.
 
 Right now, all threads are waiting for access to coffee machine while they could take orders. Try to do better:
 
-- 5 threads will be taking orders, and putting them in a queue (use [BlockingQueue](https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/BlockingQueue.html) and `LinkedBlockingQueue` class);
+- 3 threads will be taking orders, and putting them in a queue (use [BlockingQueue](https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/BlockingQueue.html) and `LinkedBlockingQueue` class);
 - 1 thread will be taking orders from a queue and making coffee.
 
 What happens if the queue has limited capacity?
