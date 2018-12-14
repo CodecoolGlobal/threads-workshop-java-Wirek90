@@ -35,6 +35,10 @@ Right now, all threads are waiting for access to coffee machine while they could
 
 What happens if the queue has limited capacity?
 
+## Make a sandwich
+
+Implement making sandwich (`game.makeSandwich(order)`). Remember that you can make several sandwiches at a time, so you'll probably need multiple threads.
+
 ## Clean up
 
 Exit the program (using `System.exit()`) after processing 15 orders.
@@ -45,10 +49,6 @@ To make the numbers simple, you can make:
 - 3 threads that will make 5 sandwiches each.
 
 You will need to make sure all threads are finished before exiting the program (`Thread.join()`).
-
-## Make a sandwich
-
-Implement making sandwich (`game.makeSandwich(order)`). Remember that you can make several sandwiches at a time, so you'll probably need multiple threads.
 
 ## Implement a queue yourself
 
