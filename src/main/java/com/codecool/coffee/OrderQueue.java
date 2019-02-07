@@ -24,7 +24,14 @@ public class OrderQueue {
      * @throws InterruptedException if the thread has been interrupted while waiting
      */
     public void put(Order order) throws InterruptedException {
-        // TODO
+        synchronized (this) {
+            System.out.println("THIS QUEUE SIZE: " + queue.size());
+            if (capacity == 0 || queue.size() < capacity) {
+                queue.add(order);
+            } else  {
+                this.wait();
+            }
+        }
     }
 
     /**
@@ -33,7 +40,11 @@ public class OrderQueue {
      * @throws InterruptedException if the thread has been interrupted while waiting
      */
     public Order take() throws InterruptedException {
-        // TODO
-        return null;
+        synchronized (this) {
+            if (queue.size() == capacity && capacity != 0) {
+                this.notifyAll();
+            }
+            return queue.poll();
+        }
     }
 }
